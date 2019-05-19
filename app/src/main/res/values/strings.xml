@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TUKSE Kombi Kontrol 1.0</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kombiayarlarfrm">Kombi Sıcaklık Ayarı</string>
+</resources>

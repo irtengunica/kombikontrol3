@@ -1,0 +1,294 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="android.support.v4.widget.SwipeRefreshLayout"
+        android:id="@+id/swview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:background="@color/highlighted_text_material_dark">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    >
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                android:id="@+id/cihazad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cihaz Adı:"
+                />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+
+                >
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                android:id="@+id/cihazID"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cihaz ID:"
+
+                />
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:background="@color/highlighted_text_material_dark">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/simdikiderece"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ev Sıcaklığı:"
+                />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24.0"
+                    android:id="@+id/anlikbtn"
+                    />
+            <TextView
+                android:id="@+id/ayarsicaklik"
+                android:text="Ayarlanan Sıcaklık:"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:padding="0dp"
+                android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:background="@color/highlighted_text_material_dark">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/kombidurumu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Kombi Durumu:"
+
+                />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+
+                >
+            <TextView
+                android:id="@+id/simdikisaat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Şimdiki Saat:"
+                android:textSize="20dp"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/guntarih"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:padding="0dp"
+                android:text="Güncelleme Kontrol:"
+                android:visibility="gone"
+                />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Güncelle"
+                    android:id="@+id/guncelle"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:background="@color/highlighted_text_material_dark">
+            <TextView
+                android:id="@+id/cihazip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Cihaz IP:"
+                android:textSize="12dp"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/mesaj1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="20dp"
+                android:visibility="gone"/>
+            />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:id="@+id/simdikidereceb"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:text="Ev Sıcaklığı:"
+                            android:background="@drawable/temp1"
+                            android:alpha="0.2"
+                            />
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:id="@+id/kombidurumub"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:text="Ev Sıcaklığı:"
+                            android:background="@drawable/kombiad1"
+                            android:alpha="0.2"
+                            />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:id="@+id/bilgilerb"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:text="Ev Sıcaklığı:"
+                            android:background="@drawable/open"
+                            android:alpha="0.2"
+                            />
+
+
+                        <ImageView
+                            android:layout_width="190dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/kombiresim"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:background="@color/highlighted_text_material_dark">
+                <Switch
+                    android:text="Sistemi Kapat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sistemdurumusw" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayarla"
+                    android:id="@+id/ayarlarbtn"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </view>
+</LinearLayout>
